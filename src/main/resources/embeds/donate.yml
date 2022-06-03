@@ -1,0 +1,25 @@
+title: "Donations"
+description:
+  - "Donations are neither required nor expected, but always appreciated :)"
+  - ""
+  - "Every donor gets the <@&857258968694652998> role which features a fancy, shiny color!"
+  - ""
+  - "**All donations above 3€ will also grant you access to my secret plugins**, including"
+  - " - **StackResize** (allows to change the max stack sizes of all items)"
+  - " - **Recipy** (create custom crafting recipes and custom items)"
+  - " - **Daytime** (change the duration of day/night per world)"
+  - " - **BetterChests** (break chests/barrels/furnaces/etc with shift-click and they'll keep their contents)"
+  - " - **CustomDrops** (change/add drops for all blocks/mobs)"
+  - " - **FasterMinecarts** (change the speed of minecarts per type)"
+  - " - and many more!"
+  - ""
+  - "You can donate using **PayPal** or **BuyMeACoffee**. After you have donated, just open a ticket and tell me the payment ID to get the role :)"
+fields:
+  - name: "PayPal"
+    text: "[Donate via PayPal](https://paypal.me/mfnalex)"
+    inline: false
+  - name: "BuyMeACoffee"
+    text: "[Donate via BuyMeACoffee](https://www.buymeacoffee.com/mfnalex)"
+    inline: false
+footer-icon: null
+thumbnail: null

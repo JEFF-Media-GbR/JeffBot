@@ -1,0 +1,11 @@
+title: "Verify your purchase"
+description:
+  - "You can verify your purchase to get the <@&823904480412172288> role and access to the <#826934723875045416> channel. Most of my paid plugins also have a separate premium support channel, to which you get access, too."
+  - ""
+  - "Verifying your purchase is required to get support for my paid plugins. Cracked, pirated, or other unofficial versions of my paid plugins will receive no support."
+fields:
+  - name: "How to verify"
+    text: "Simply head to <#863103918828683297> and click on \"Verify Purchase\". A new channel will be created. Now you simply have to send the \"discord-verification.html\" file (you can find it inside the plugin folder), and then send a link to your SpigotMC profile. Your purchase will be verified automatically."
+    inline: false
+footer-icon: null
+thumbnail: null

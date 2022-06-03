@@ -1,0 +1,25 @@
+title: "JeffBot v0.0.1-SNAPSHOT"
+description:
+  - "This Discord server is using JeffBot."
+  - ""
+  - "Line 3"
+  - "Line 4"
+fields:
+  - name: "Inline 1"
+    text: "Test 1"
+    inline: true
+  - name: "Inline 2"
+    text: "Test 2"
+    inline: true
+  - name: "Inline 3"
+    text: "Test 3"
+    inline: true
+  - name: "Test 1"
+    text: "asdadsasdasdasdasdadasdasdasd"
+    inline: false
+  - name: "Test 2"
+    text: "awfhilafwlhiwafhilwaghliwaghilgwahilawghl"
+    inline: false
+footer: "JeffBot by JEFF Media GbR / mfnalex"
+footer-icon: null
+thumbnail: null

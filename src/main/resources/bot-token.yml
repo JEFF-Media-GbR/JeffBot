@@ -1,0 +1,4 @@
+# Your Discord bot token. Get it from the Discord Developer Portal.
+# Type: String
+# REQUIRED
+bot-token: "your-bot-token"
