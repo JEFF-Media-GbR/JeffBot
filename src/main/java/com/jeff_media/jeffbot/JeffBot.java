@@ -56,6 +56,7 @@ public class JeffBot {
         }
 
         jda.addEventListener(new MessageListener());
+
     }
 
     public void reload() {
