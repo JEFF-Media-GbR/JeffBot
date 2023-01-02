@@ -8,7 +8,7 @@ import lombok.extern.java.Log;
 import net.dv8tion.jda.api.entities.Guild;
 import net.dv8tion.jda.api.entities.Member;
 import net.dv8tion.jda.api.entities.MessageEmbed;
-import net.dv8tion.jda.api.entities.TextChannel;
+import net.dv8tion.jda.api.entities.channel.concrete.TextChannel;
 import net.dv8tion.jda.api.events.message.MessageReceivedEvent;
 
 import java.util.*;
@@ -24,8 +24,8 @@ public class User extends CommandSender {
     private final Member member;
 
     public User(MessageReceivedEvent event) {
-        this.channelId = event.getTextChannel().getId();
-        this.channel = event.getTextChannel();
+        this.channelId = event.getChannel().getId();
+        this.channel = event.getChannel().asTextChannel();
         this.member = event.getMember();
         this.permissions = MAIN.getPermissionCache().getPermissions(member);
     }

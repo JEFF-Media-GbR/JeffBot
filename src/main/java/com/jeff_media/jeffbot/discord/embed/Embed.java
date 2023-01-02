@@ -4,9 +4,7 @@ import com.jeff_media.jeffbot.discord.Emojis;
 import lombok.Data;
 import lombok.RequiredArgsConstructor;
 import net.dv8tion.jda.api.EmbedBuilder;
-import net.dv8tion.jda.api.entities.Emoji;
 import net.dv8tion.jda.api.entities.MessageEmbed;
-import net.dv8tion.jda.api.entities.TextChannel;
 import org.yaml.snakeyaml.Yaml;
 
 import java.io.File;

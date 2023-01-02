@@ -10,6 +10,7 @@ import lombok.Getter;
 import net.dv8tion.jda.api.JDA;
 import net.dv8tion.jda.api.JDABuilder;
 import net.dv8tion.jda.api.entities.Message;
+import net.dv8tion.jda.api.exceptions.InvalidTokenException;
 import net.dv8tion.jda.api.requests.GatewayIntent;
 import net.dv8tion.jda.api.utils.ChunkingFilter;
 import net.dv8tion.jda.api.utils.MemberCachePolicy;
@@ -45,7 +46,7 @@ public class JeffBot {
         try {
             jda = builder.build();
             jda.awaitReady();
-        } catch (LoginException e) {
+        } catch (InvalidTokenException | IllegalArgumentException e) {
             Logger.error("Could not login to Discord, check if your bot-token is setup correctly in \"bot-token.yml\"",e);
         } catch (InterruptedException e) {
             e.printStackTrace();
@@ -85,6 +86,7 @@ public class JeffBot {
         addCommand("help",CommandHelp::new);
         addCommand("embed", CommandEmbed::new);
         addCommand("userinfo",CommandUserInfo::new);
+        addCommand("renamechannel",CommandRenameChannel::new);
         //addCommand("test", CommandTest::new);
     }
 
@@ -108,6 +110,8 @@ public class JeffBot {
             return;
         }
 
+        Logger.info(sender + " executed command: " + String.join(" ",args));
+
         CommandResult result = command.execute(sender, message, Utils.shiftArray(args));
 
         if(result == CommandResult.WRONG_USAGE) {
@@ -117,8 +121,6 @@ public class JeffBot {
             sender.message("You cannot run this command from console.");
             return;
         }
-
-        Logger.info(sender + " executed command: " + String.join(" ",args));
 
     }
 

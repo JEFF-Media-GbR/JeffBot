@@ -7,7 +7,7 @@ import com.jeff_media.jeffbot.command.User;
 import com.jeff_media.jeffbot.discord.embed.Embed;
 import net.dv8tion.jda.api.entities.Message;
 import net.dv8tion.jda.api.entities.MessageEmbed;
-import net.dv8tion.jda.api.entities.TextChannel;
+import net.dv8tion.jda.api.entities.channel.concrete.TextChannel;
 import org.jetbrains.annotations.Nullable;
 
 import java.io.File;
